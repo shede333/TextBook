@@ -12,6 +12,6 @@
 //    NSString *name;
 }
 
-@property ( nonatomic) NSString *name;
+@property ( nonatomic,copy) NSString *name;
 
 @end

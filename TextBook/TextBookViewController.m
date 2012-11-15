@@ -34,6 +34,7 @@
 #import "GraphicsViewController.h"
 #import "HitTestViewController.h"
 #import "KVOViewController.h"
+#import "WebViewFileViewController.h"
 
 
 
@@ -1108,6 +1109,12 @@ static float FLOAT_TIMER = 10.0f;
         return wcell;
     }
     
+    if (indexPath.row == 27) {
+        wcell.textLabel.text = @"WebView";
+        
+        return wcell;
+    }
+    
     
     
     
@@ -1145,51 +1152,51 @@ static float FLOAT_TIMER = 10.0f;
     
     
     if (indexPath.row == 3) {
-        ceng *cengTest = [[ceng alloc] initWithNibName:@"ceng" bundle:nil];
+        ceng *file = [[ceng alloc] initWithNibName:@"ceng" bundle:nil];
         
-        [self.navigationController pushViewController:cengTest animated:YES];
+        [self.navigationController pushViewController:file animated:YES];
         
-        [cengTest release];
+        [file release];
         return;
     }
     
     if (indexPath.row == 4) {
-        fengHuoLun *fengHL = [[fengHuoLun alloc] initWithNibName:@"fengHuoLun" bundle:nil];
+        fengHuoLun *file = [[fengHuoLun alloc] initWithNibName:@"fengHuoLun" bundle:nil];
         
-        [self.navigationController pushViewController:fengHL animated:YES];
-        
+        [self.navigationController pushViewController:file animated:YES];
+        [file release];
         return;
     }
     
     if (indexPath.row == 5) {
-        alertController *alController = [[alertController alloc] initWithNibName:@"alertController" bundle:nil];
+        alertController *file = [[alertController alloc] initWithNibName:@"alertController" bundle:nil];
         
-        [self.navigationController pushViewController:alController animated:YES];
-        
+        [self.navigationController pushViewController:file animated:YES];
+        [file release];
         return;
     }
     
     if (indexPath.row == 7) {
-        Animation *donghua = [[Animation alloc] initWithNibName:@"Animation" bundle:nil];
+        Animation *file = [[Animation alloc] initWithNibName:@"Animation" bundle:nil];
         
-        [self.navigationController pushViewController:donghua animated:YES];
-        
+        [self.navigationController pushViewController:file animated:YES];
+        [file release];
         return;
     }
     
     if (indexPath.row == 8) {
-        DBViewController *DBController = [[DBViewController alloc] initWithNibName:@"DBViewController" bundle:nil];
+        DBViewController *file = [[DBViewController alloc] initWithNibName:@"DBViewController" bundle:nil];
         
-        [self.navigationController pushViewController:DBController animated:YES];
-        
+        [self.navigationController pushViewController:file animated:YES];
+        [file release];
         return;
     }
     
     if (indexPath.row == 9) {
-        sqliteViewController *sqlite = [[sqliteViewController alloc] initWithNibName:@"sqliteViewController" bundle:nil];
+        sqliteViewController *file = [[sqliteViewController alloc] initWithNibName:@"sqliteViewController" bundle:nil];
         
-        [self.navigationController pushViewController:sqlite animated:YES];
-        
+        [self.navigationController pushViewController:file animated:YES];
+        [file release];
         return;
     }
     
@@ -1197,7 +1204,7 @@ static float FLOAT_TIMER = 10.0f;
         FileManager *file = [[FileManager alloc] initWithNibName:@"FileManager" bundle:nil];
         
         [self.navigationController pushViewController:file animated:YES];
-        
+        [file release];
         return;
     }
     
@@ -1205,7 +1212,7 @@ static float FLOAT_TIMER = 10.0f;
         ChatWindow *file = [[ChatWindow alloc] initWithNibName:@"ChatWindow" bundle:nil];
         
         [self.navigationController pushViewController:file animated:YES];
-        
+        [file release];
         return;
     }
     
@@ -1214,132 +1221,127 @@ static float FLOAT_TIMER = 10.0f;
         
 //        [self.navigationController pushViewController:file animated:YES];
         [self.navigationController.view addSubview:file.view];
-        
+        [file release];
         return;
     }
     
     if (indexPath.row == 13) {
         SWAccelerometer *file = [[SWAccelerometer alloc] initWithNibName:@"SWAccelerometer" bundle:nil];
-        
-        //        [self.navigationController pushViewController:file animated:YES];
+ 
         [self.navigationController pushViewController:file animated:YES];
-        
+        [file release];
         return;
     }
     
     if (indexPath.row == 14) {
         SWMotionManager *file = [[SWMotionManager alloc] initWithNibName:@"SWMotionManager" bundle:nil];
-        
-        //        [self.navigationController pushViewController:file animated:YES];
+ 
         [self.navigationController pushViewController:file animated:YES];
-        
+        [file release];
         return;
     }
     
     if (indexPath.row == 15) {
         CameraSW *file = [[CameraSW alloc] initWithNibName:@"CameraSW" bundle:nil];
-        
-        //        [self.navigationController pushViewController:file animated:YES];
+ 
         [self.navigationController pushViewController:file animated:YES];
-        
+        [file release];
         return;
     }
     
     if (indexPath.row == 16) {
         ImageAnimatoon *file = [[ImageAnimatoon alloc] initWithNibName:@"ImageAnimatoon" bundle:nil];
-        
-        //        [self.navigationController pushViewController:file animated:YES];
+ 
         [self.navigationController pushViewController:file animated:YES];
-        
+        [file release];
         return;
     }
     
     if (indexPath.row == 17) {
         MediaPlayerSW *file = [[MediaPlayerSW alloc] initWithNibName:@"MediaPlayerSW" bundle:nil];
-        
-        //        [self.navigationController pushViewController:file animated:YES];
+ 
         [self.navigationController pushViewController:file animated:YES];
-        
+        [file release];
         return;
     }
     
     if (indexPath.row == 18) {
         KeyBoardSW *file = [[KeyBoardSW alloc] initWithNibName:@"KeyBoardSW" bundle:nil];
-        
-        //        [self.navigationController pushViewController:file animated:YES];
+ 
         [self.navigationController pushViewController:file animated:YES];
-        
+        [file release];
         return;
     }
     
     if (indexPath.row == 19) {
         AddImagePicker *file = [[AddImagePicker alloc] initWithNibName:@"AddImagePicker" bundle:nil];
-        
-        //        [self.navigationController pushViewController:file animated:YES];
+ 
         [self.navigationController pushViewController:file animated:YES];
-        
+        [file release];
         return;
     }
     
     if (indexPath.row == 20) {
         CopyPasteTextController *file = [[CopyPasteTextController alloc] initWithNibName:@"CopyPasteTextController" bundle:nil];
-        
-        //        [self.navigationController pushViewController:file animated:YES];
+ 
         [self.navigationController pushViewController:file animated:YES];
-        
+        [file release];
         return;
     }
     
     if (indexPath.row == 21) {
         JsonIOSSW *file = [[JsonIOSSW alloc] initWithNibName:@"JsonIOSSW" bundle:nil];
-        
-        //        [self.navigationController pushViewController:file animated:YES];
+ 
         [self.navigationController pushViewController:file animated:YES];
-        
+        [file release];
         return;
     }
     
     if (indexPath.row == 22) {
         Transform3DSW *file = [[Transform3DSW alloc] initWithNibName:@"Transform3DSW" bundle:nil];
-        
-        //        [self.navigationController pushViewController:file animated:YES];
+ 
         [self.navigationController pushViewController:file animated:YES];
-        
+        [file release];
         return;
     }
     
     if (indexPath.row == 23) {
         TableViewMoveAndDelete *file = [[TableViewMoveAndDelete alloc] initWithNibName:@"TableViewMoveAndDelete" bundle:nil];
-        
-        //        [self.navigationController pushViewController:file animated:YES];
+ 
         [self.navigationController pushViewController:file animated:YES];
-        
+        [file release];
         return;
     }
     
     if (indexPath.row == 24) {
         ViewController *file = [[ViewController alloc] initWithNibName:@"GraphicsViewController" bundle:nil];
-        
-        //        [self.navigationController pushViewController:file animated:YES];
+ 
         [self.navigationController pushViewController:file animated:YES];
-        
+        [file release];
         return;
     }
     
     if (indexPath.row == 25) {
         HitTestViewController *file = [[HitTestViewController alloc] initWithNibName:@"HitTestViewController" bundle:nil];
-        
-        //        [self.navigationController pushViewController:file animated:YES];
+ 
         [self.navigationController pushViewController:file animated:YES];
-        
+        [file release];
         return;
     }
     
     if (indexPath.row == 26) {
         KVOViewController *file = [[KVOViewController alloc] initWithNibName:@"KVOViewController" bundle:nil];
-        
-        //        [self.navigationController pushViewController:file animated:YES];
+ 
         [self.navigationController pushViewController:file animated:YES];
+        [file release];
+        return;
+    }
+    
+    if (indexPath.row == 27) {
+        WebViewFileViewController *file = [[WebViewFileViewController alloc] initWithNibName:@"WebViewFileViewController" bundle:nil];
+        
+        [self.navigationController pushViewController:file animated:YES];
+        [file release];
         
         return;
     }

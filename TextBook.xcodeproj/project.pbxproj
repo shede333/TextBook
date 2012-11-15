@@ -14,6 +14,14 @@
 		5FEFC51515C67A6E0063A969 /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEFC51115C67A6E0063A969 /* KVOViewController.m */; };
 		5FEFC51615C67A6E0063A969 /* KVOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FEFC51215C67A6E0063A969 /* KVOViewController.xib */; };
 		5FEFC51715C67A6E0063A969 /* iBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEFC51415C67A6E0063A969 /* iBook.m */; };
+		7F6EE1251654863300C83EAB /* WebViewFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6EE1231654863300C83EAB /* WebViewFileViewController.m */; };
+		7F6EE1261654863300C83EAB /* WebViewFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F6EE1241654863300C83EAB /* WebViewFileViewController.xib */; };
+		7F79FEFB1654C99800FF91A7 /* WebView.html in Resources */ = {isa = PBXBuildFile; fileRef = 7F79FEFA1654C99800FF91A7 /* WebView.html */; };
+		7F79FF011654DB6500FF91A7 /* WebView.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7F79FF001654DB6500FF91A7 /* WebView.gif */; };
+		7F79FF041654DD7F00FF91A7 /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F79FF031654DD7F00FF91A7 /* loading.png */; };
+		7F79FF061654DF5400FF91A7 /* htmlContent in Resources */ = {isa = PBXBuildFile; fileRef = 7F79FF051654DF5400FF91A7 /* htmlContent */; };
+		7F79FF081654E15000FF91A7 /* htmlContent2 in Resources */ = {isa = PBXBuildFile; fileRef = 7F79FF071654E15000FF91A7 /* htmlContent2 */; };
+		7F79FF0A1654E85300FF91A7 /* WebView2.html in Resources */ = {isa = PBXBuildFile; fileRef = 7F79FF091654E85300FF91A7 /* WebView2.html */; };
 		8B053006147F25520013EC1B /* faq.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B053005147F25520013EC1B /* faq.plist */; };
 		8B05300C147F2FC00013EC1B /* faq_content.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B05300B147F2FC00013EC1B /* faq_content.plist */; };
 		8B05300F147F5B860013EC1B /* faq_title.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B05300E147F5B860013EC1B /* faq_title.plist */; };
@@ -550,6 +558,15 @@
 		5FEFC51215C67A6E0063A969 /* KVOViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KVOViewController.xib; sourceTree = "<group>"; };
 		5FEFC51315C67A6E0063A969 /* iBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBook.h; sourceTree = "<group>"; };
 		5FEFC51415C67A6E0063A969 /* iBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBook.m; sourceTree = "<group>"; };
+		7F6EE1221654863300C83EAB /* WebViewFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewFileViewController.h; sourceTree = "<group>"; };
+		7F6EE1231654863300C83EAB /* WebViewFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewFileViewController.m; sourceTree = "<group>"; };
+		7F6EE1241654863300C83EAB /* WebViewFileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewFileViewController.xib; sourceTree = "<group>"; };
+		7F79FEFA1654C99800FF91A7 /* WebView.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WebView.html; sourceTree = "<group>"; };
+		7F79FF001654DB6500FF91A7 /* WebView.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = WebView.gif; sourceTree = "<group>"; };
+		7F79FF031654DD7F00FF91A7 /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading.png; sourceTree = "<group>"; };
+		7F79FF051654DF5400FF91A7 /* htmlContent */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = htmlContent; sourceTree = "<group>"; };
+		7F79FF071654E15000FF91A7 /* htmlContent2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = htmlContent2; sourceTree = "<group>"; };
+		7F79FF091654E85300FF91A7 /* WebView2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WebView2.html; sourceTree = "<group>"; };
 		8B053005147F25520013EC1B /* faq.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = faq.plist; sourceTree = "<group>"; };
 		8B05300B147F2FC00013EC1B /* faq_content.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = faq_content.plist; sourceTree = "<group>"; };
 		8B05300E147F5B860013EC1B /* faq_title.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = faq_title.plist; sourceTree = "<group>"; };
@@ -1170,6 +1187,30 @@
 			name = KVO;
 			sourceTree = "<group>";
 		};
+		7F6EE1201654860700C83EAB /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				7F79FEF91654C98900FF91A7 /* res */,
+				7F6EE1221654863300C83EAB /* WebViewFileViewController.h */,
+				7F6EE1231654863300C83EAB /* WebViewFileViewController.m */,
+				7F6EE1241654863300C83EAB /* WebViewFileViewController.xib */,
+			);
+			name = WebView;
+			sourceTree = "<group>";
+		};
+		7F79FEF91654C98900FF91A7 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				7F79FF031654DD7F00FF91A7 /* loading.png */,
+				7F79FF001654DB6500FF91A7 /* WebView.gif */,
+				7F79FEFA1654C99800FF91A7 /* WebView.html */,
+				7F79FF091654E85300FF91A7 /* WebView2.html */,
+				7F79FF051654DF5400FF91A7 /* htmlContent */,
+				7F79FF071654E15000FF91A7 /* htmlContent2 */,
+			);
+			name = res;
+			sourceTree = "<group>";
+		};
 		8B151E471420EE23002DE67F /* res */ = {
 			isa = PBXGroup;
 			children = (
@@ -1247,6 +1288,7 @@
 			isa = PBXGroup;
 			children = (
 				8BEDF1ED1499A7ED006F1C51 /* IMG_03685557.png */,
+				7F6EE1201654860700C83EAB /* WebView */,
 				5F3F360315C66FC500F95B08 /* KVO */,
 				5F0DF34315AFFAFF00037DBD /* hitTestView */,
 				8BE2BA46157CB8B60084027B /* Graphics */,
@@ -2602,6 +2644,13 @@
 				8BE2BA4E157CB90F0084027B /* GraphicsViewController.xib in Resources */,
 				5F0DF34915AFFB2A00037DBD /* HitTestViewController.xib in Resources */,
 				5FEFC51615C67A6E0063A969 /* KVOViewController.xib in Resources */,
+				7F6EE1261654863300C83EAB /* WebViewFileViewController.xib in Resources */,
+				7F79FEFB1654C99800FF91A7 /* WebView.html in Resources */,
+				7F79FF011654DB6500FF91A7 /* WebView.gif in Resources */,
+				7F79FF041654DD7F00FF91A7 /* loading.png in Resources */,
+				7F79FF061654DF5400FF91A7 /* htmlContent in Resources */,
+				7F79FF081654E15000FF91A7 /* htmlContent2 in Resources */,
+				7F79FF0A1654E85300FF91A7 /* WebView2.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2662,6 +2711,7 @@
 				5F0DF35915AFFBED00037DBD /* SubHitTestView2.m in Sources */,
 				5FEFC51515C67A6E0063A969 /* KVOViewController.m in Sources */,
 				5FEFC51715C67A6E0063A969 /* iBook.m in Sources */,
+				7F6EE1251654863300C83EAB /* WebViewFileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2744,7 +2794,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TextBook/TextBook-Prefix.pch";
 				INFOPLIST_FILE = "TextBook/TextBook-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "2C4AF0B9-DBD0-4265-AE2D-082D7A6D9B4C";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2C4AF0B9-DBD0-4265-AE2D-082D7A6D9B4C";
@@ -2761,7 +2811,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TextBook/TextBook-Prefix.pch";
 				INFOPLIST_FILE = "TextBook/TextBook-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "115FBD97-658A-4578-BB57-EA767EE0BAA2";
 				VALIDATE_PRODUCT = YES;
