@@ -16,6 +16,10 @@
 		5FEFC51715C67A6E0063A969 /* iBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEFC51415C67A6E0063A969 /* iBook.m */; };
 		7F6EE1251654863300C83EAB /* WebViewFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6EE1231654863300C83EAB /* WebViewFileViewController.m */; };
 		7F6EE1261654863300C83EAB /* WebViewFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F6EE1241654863300C83EAB /* WebViewFileViewController.xib */; };
+		7F78540F1659D37C0060AE88 /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78540D1659D37C0060AE88 /* ButtonViewController.m */; };
+		7F7854101659D37C0060AE88 /* ButtonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F78540E1659D37C0060AE88 /* ButtonViewController.xib */; };
+		7F7854131659D4190060AE88 /* btn_Bgd.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F7854121659D4190060AE88 /* btn_Bgd.png */; };
+		7F7854151659D62D0060AE88 /* btn_Bgd_Big.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F7854141659D62D0060AE88 /* btn_Bgd_Big.png */; };
 		7F79FEFB1654C99800FF91A7 /* WebView.html in Resources */ = {isa = PBXBuildFile; fileRef = 7F79FEFA1654C99800FF91A7 /* WebView.html */; };
 		7F79FF011654DB6500FF91A7 /* WebView.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7F79FF001654DB6500FF91A7 /* WebView.gif */; };
 		7F79FF041654DD7F00FF91A7 /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F79FF031654DD7F00FF91A7 /* loading.png */; };
@@ -561,6 +565,11 @@
 		7F6EE1221654863300C83EAB /* WebViewFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewFileViewController.h; sourceTree = "<group>"; };
 		7F6EE1231654863300C83EAB /* WebViewFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewFileViewController.m; sourceTree = "<group>"; };
 		7F6EE1241654863300C83EAB /* WebViewFileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewFileViewController.xib; sourceTree = "<group>"; };
+		7F78540C1659D37C0060AE88 /* ButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonViewController.h; sourceTree = "<group>"; };
+		7F78540D1659D37C0060AE88 /* ButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonViewController.m; sourceTree = "<group>"; };
+		7F78540E1659D37C0060AE88 /* ButtonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonViewController.xib; sourceTree = "<group>"; };
+		7F7854121659D4190060AE88 /* btn_Bgd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_Bgd.png; sourceTree = "<group>"; };
+		7F7854141659D62D0060AE88 /* btn_Bgd_Big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_Bgd_Big.png; sourceTree = "<group>"; };
 		7F79FEFA1654C99800FF91A7 /* WebView.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WebView.html; sourceTree = "<group>"; };
 		7F79FF001654DB6500FF91A7 /* WebView.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = WebView.gif; sourceTree = "<group>"; };
 		7F79FF031654DD7F00FF91A7 /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading.png; sourceTree = "<group>"; };
@@ -1198,6 +1207,26 @@
 			name = WebView;
 			sourceTree = "<group>";
 		};
+		7F78540A1659D3620060AE88 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				7F7854111659D4090060AE88 /* Res */,
+				7F78540C1659D37C0060AE88 /* ButtonViewController.h */,
+				7F78540D1659D37C0060AE88 /* ButtonViewController.m */,
+				7F78540E1659D37C0060AE88 /* ButtonViewController.xib */,
+			);
+			name = UIButton;
+			sourceTree = "<group>";
+		};
+		7F7854111659D4090060AE88 /* Res */ = {
+			isa = PBXGroup;
+			children = (
+				7F7854141659D62D0060AE88 /* btn_Bgd_Big.png */,
+				7F7854121659D4190060AE88 /* btn_Bgd.png */,
+			);
+			name = Res;
+			sourceTree = "<group>";
+		};
 		7F79FEF91654C98900FF91A7 /* res */ = {
 			isa = PBXGroup;
 			children = (
@@ -1288,6 +1317,7 @@
 			isa = PBXGroup;
 			children = (
 				8BEDF1ED1499A7ED006F1C51 /* IMG_03685557.png */,
+				7F78540A1659D3620060AE88 /* UIButton */,
 				7F6EE1201654860700C83EAB /* WebView */,
 				5F3F360315C66FC500F95B08 /* KVO */,
 				5F0DF34315AFFAFF00037DBD /* hitTestView */,
@@ -2651,6 +2681,9 @@
 				7F79FF061654DF5400FF91A7 /* htmlContent in Resources */,
 				7F79FF081654E15000FF91A7 /* htmlContent2 in Resources */,
 				7F79FF0A1654E85300FF91A7 /* WebView2.html in Resources */,
+				7F7854101659D37C0060AE88 /* ButtonViewController.xib in Resources */,
+				7F7854131659D4190060AE88 /* btn_Bgd.png in Resources */,
+				7F7854151659D62D0060AE88 /* btn_Bgd_Big.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2712,6 +2745,7 @@
 				5FEFC51515C67A6E0063A969 /* KVOViewController.m in Sources */,
 				5FEFC51715C67A6E0063A969 /* iBook.m in Sources */,
 				7F6EE1251654863300C83EAB /* WebViewFileViewController.m in Sources */,
+				7F78540F1659D37C0060AE88 /* ButtonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

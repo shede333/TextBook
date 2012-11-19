@@ -35,6 +35,7 @@
 #import "HitTestViewController.h"
 #import "KVOViewController.h"
 #import "WebViewFileViewController.h"
+#import "ButtonViewController.h"
 
 
 
@@ -1115,6 +1116,12 @@ static float FLOAT_TIMER = 10.0f;
         return wcell;
     }
     
+    if (indexPath.row == 28) {
+        wcell.textLabel.text = @"Button-EdgeInset";
+        
+        return wcell;
+    }
+    
     
     
     
@@ -1339,6 +1346,15 @@ static float FLOAT_TIMER = 10.0f;
     
     if (indexPath.row == 27) {
         WebViewFileViewController *file = [[WebViewFileViewController alloc] initWithNibName:@"WebViewFileViewController" bundle:nil];
+        
+        [self.navigationController pushViewController:file animated:YES];
+        [file release];
+        
+        return;
+    }
+    
+    if (indexPath.row == 28) {
+        ButtonViewController *file = [[ButtonViewController alloc] initWithNibName:@"ButtonViewController" bundle:nil];
         
         [self.navigationController pushViewController:file animated:YES];
         [file release];
