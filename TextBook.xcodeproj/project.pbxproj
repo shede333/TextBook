@@ -14,6 +14,9 @@
 		5FEFC51515C67A6E0063A969 /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEFC51115C67A6E0063A969 /* KVOViewController.m */; };
 		5FEFC51615C67A6E0063A969 /* KVOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FEFC51215C67A6E0063A969 /* KVOViewController.xib */; };
 		5FEFC51715C67A6E0063A969 /* iBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEFC51415C67A6E0063A969 /* iBook.m */; };
+		7F240C5916AD1278008D8FD6 /* TestCodingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F240C5716AD1278008D8FD6 /* TestCodingViewController.m */; };
+		7F240C5A16AD1278008D8FD6 /* TestCodingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F240C5816AD1278008D8FD6 /* TestCodingViewController.xib */; };
+		7F240C6016AD12F0008D8FD6 /* CodingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F240C5F16AD12F0008D8FD6 /* CodingModel.m */; };
 		7F6EE1251654863300C83EAB /* WebViewFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6EE1231654863300C83EAB /* WebViewFileViewController.m */; };
 		7F6EE1261654863300C83EAB /* WebViewFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F6EE1241654863300C83EAB /* WebViewFileViewController.xib */; };
 		7F78540F1659D37C0060AE88 /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F78540D1659D37C0060AE88 /* ButtonViewController.m */; };
@@ -562,6 +565,11 @@
 		5FEFC51215C67A6E0063A969 /* KVOViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KVOViewController.xib; sourceTree = "<group>"; };
 		5FEFC51315C67A6E0063A969 /* iBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBook.h; sourceTree = "<group>"; };
 		5FEFC51415C67A6E0063A969 /* iBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBook.m; sourceTree = "<group>"; };
+		7F240C5616AD1278008D8FD6 /* TestCodingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCodingViewController.h; sourceTree = "<group>"; };
+		7F240C5716AD1278008D8FD6 /* TestCodingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCodingViewController.m; sourceTree = "<group>"; };
+		7F240C5816AD1278008D8FD6 /* TestCodingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestCodingViewController.xib; sourceTree = "<group>"; };
+		7F240C5E16AD12F0008D8FD6 /* CodingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodingModel.h; sourceTree = "<group>"; };
+		7F240C5F16AD12F0008D8FD6 /* CodingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodingModel.m; sourceTree = "<group>"; };
 		7F6EE1221654863300C83EAB /* WebViewFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewFileViewController.h; sourceTree = "<group>"; };
 		7F6EE1231654863300C83EAB /* WebViewFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewFileViewController.m; sourceTree = "<group>"; };
 		7F6EE1241654863300C83EAB /* WebViewFileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewFileViewController.xib; sourceTree = "<group>"; };
@@ -1196,6 +1204,18 @@
 			name = KVO;
 			sourceTree = "<group>";
 		};
+		7F240C5416AD1214008D8FD6 /* NSCoding */ = {
+			isa = PBXGroup;
+			children = (
+				7F240C5616AD1278008D8FD6 /* TestCodingViewController.h */,
+				7F240C5716AD1278008D8FD6 /* TestCodingViewController.m */,
+				7F240C5816AD1278008D8FD6 /* TestCodingViewController.xib */,
+				7F240C5E16AD12F0008D8FD6 /* CodingModel.h */,
+				7F240C5F16AD12F0008D8FD6 /* CodingModel.m */,
+			);
+			name = NSCoding;
+			sourceTree = "<group>";
+		};
 		7F6EE1201654860700C83EAB /* WebView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1317,6 +1337,7 @@
 			isa = PBXGroup;
 			children = (
 				8BEDF1ED1499A7ED006F1C51 /* IMG_03685557.png */,
+				7F240C5416AD1214008D8FD6 /* NSCoding */,
 				7F78540A1659D3620060AE88 /* UIButton */,
 				7F6EE1201654860700C83EAB /* WebView */,
 				5F3F360315C66FC500F95B08 /* KVO */,
@@ -2684,6 +2705,7 @@
 				7F7854101659D37C0060AE88 /* ButtonViewController.xib in Resources */,
 				7F7854131659D4190060AE88 /* btn_Bgd.png in Resources */,
 				7F7854151659D62D0060AE88 /* btn_Bgd_Big.png in Resources */,
+				7F240C5A16AD1278008D8FD6 /* TestCodingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2746,6 +2768,8 @@
 				5FEFC51715C67A6E0063A969 /* iBook.m in Sources */,
 				7F6EE1251654863300C83EAB /* WebViewFileViewController.m in Sources */,
 				7F78540F1659D37C0060AE88 /* ButtonViewController.m in Sources */,
+				7F240C5916AD1278008D8FD6 /* TestCodingViewController.m in Sources */,
+				7F240C6016AD12F0008D8FD6 /* CodingModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

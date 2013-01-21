@@ -36,6 +36,7 @@
 #import "KVOViewController.h"
 #import "WebViewFileViewController.h"
 #import "ButtonViewController.h"
+#import "TestCodingViewController.h"
 
 
 
@@ -1122,6 +1123,11 @@ static float FLOAT_TIMER = 10.0f;
         return wcell;
     }
     
+    if (indexPath.row == 29) {
+        wcell.textLabel.text = @"NSCoding";
+        
+        return wcell;
+    }
     
     
     
@@ -1355,6 +1361,15 @@ static float FLOAT_TIMER = 10.0f;
     
     if (indexPath.row == 28) {
         ButtonViewController *file = [[ButtonViewController alloc] initWithNibName:@"ButtonViewController" bundle:nil];
+        
+        [self.navigationController pushViewController:file animated:YES];
+        [file release];
+        
+        return;
+    }
+    
+    if (indexPath.row == 29) {
+        TestCodingViewController *file = [[TestCodingViewController alloc] initWithNibName:@"TestCodingViewController" bundle:nil];
         
         [self.navigationController pushViewController:file animated:YES];
         [file release];
