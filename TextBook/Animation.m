@@ -43,7 +43,7 @@
 //    self.swSmile.frame = CGRectMake(0, 0, 80, 80);
 //    self.swSmile.center = self.view.center;
     
-    NSLog(@"uniqueIdentifier:%@\n",[UIDevice currentDevice].uniqueIdentifier);
+//    NSLog(@"uniqueIdentifier:%@\n",[UIDevice currentDevice].uniqueIdentifier);
 }
 
 - (void)viewDidUnload

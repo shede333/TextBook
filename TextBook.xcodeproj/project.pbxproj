@@ -2205,6 +2205,8 @@
 /* Begin PBXProject section */
 		8B2AEAC613CFE31A00DD3FB6 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 8B2AEAC913CFE31A00DD3FB6 /* Build configuration list for PBXProject "TextBook" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -2845,17 +2847,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Chao Chen (PEE2UJ4P5C)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chao Chen (PEE2UJ4P5C)";
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TextBook/TextBook-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "TextBook/TextBook-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2C4AF0B9-DBD0-4265-AE2D-082D7A6D9B4C";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2C4AF0B9-DBD0-4265-AE2D-082D7A6D9B4C";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -2864,14 +2869,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Chao Chen (PEE2UJ4P5C)";
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TextBook/TextBook-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "TextBook/TextBook-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "115FBD97-658A-4578-BB57-EA767EE0BAA2";
+				PROVISIONING_PROFILE = "";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
